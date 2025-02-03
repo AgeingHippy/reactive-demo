@@ -1,17 +1,15 @@
 package com.ageinghippy.reactive_demo.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.data.annotation.Id;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
-@NoArgsConstructor
-@ToString
-public class Student {
+public class Teacher {
 
     @Id
     private Integer id;
-    private String name;
+    private String Name;
+    private String Subject;
 }
-
